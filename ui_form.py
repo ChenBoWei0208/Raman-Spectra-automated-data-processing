@@ -23,12 +23,15 @@ class Ui_Widget(object):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
         Widget.resize(800, 600)
-        self.pushButton = QPushButton(Widget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(230, 220, 80, 24))
-        self.textEdit = QTextEdit(Widget)
-        self.textEdit.setObjectName(u"textEdit")
-        self.textEdit.setGeometry(QRect(320, 190, 104, 70))
+        self.Open_File = QPushButton(Widget)
+        self.Open_File.setObjectName(u"Open_File")
+        self.Open_File.setGeometry(QRect(230, 220, 80, 24))
+        self.view = QTextEdit(Widget)
+        self.view.setObjectName(u"view")
+        self.view.setGeometry(QRect(340, 150, 291, 201))
+        self.Save_File = QPushButton(Widget)
+        self.Save_File.setObjectName(u"Save_File")
+        self.Save_File.setGeometry(QRect(230, 280, 80, 24))
 
         self.retranslateUi(Widget)
 
@@ -37,6 +40,7 @@ class Ui_Widget(object):
 
     def retranslateUi(self, Widget):
         Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Widget", None))
-        self.pushButton.setText(QCoreApplication.translate("Widget", u"PushButton", None))
+        self.Open_File.setText(QCoreApplication.translate("Widget", u"Open File", None))
+        self.Save_File.setText(QCoreApplication.translate("Widget", u"Save File", None))
     # retranslateUi
 

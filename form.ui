@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Open_File">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -23,17 +23,30 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Open File</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="view">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>190</y>
-     <width>104</width>
-     <height>70</height>
+     <x>340</x>
+     <y>150</y>
+     <width>291</width>
+     <height>201</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Save_File">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>280</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save File</string>
    </property>
   </widget>
  </widget>
